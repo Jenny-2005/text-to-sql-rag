@@ -1,0 +1,32 @@
+# Environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ChromaDB vector store (rebuild with build_index())
+chroma_db/
+
+# Environment variables (NEVER commit API keys)
+.env
+*.env
+
+# Database files
+*.db
+*.sqlite
+
+# Conversation history
+conversations.json
+chat_history.json
+
+# VS Code
+.vscode/
+
+# Python
+*.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
