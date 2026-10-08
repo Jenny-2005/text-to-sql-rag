@@ -1,0 +1,30 @@
+[
+  {
+    "id": "q1",
+    "query": "How many customers signed up in the last 30 days?",
+    "expected_sql": "SELECT COUNT(*) FROM customers WHERE signup_date >= CURRENT_DATE - INTERVAL '30 days'",
+    "expected_result": [
+      {
+        "count": 42
+      }
+    ],
+    "dialect": "postgres",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q2",
+    "query": "List the top 5 products by total sales revenue",
+    "expected_sql": null,
+    "expected_result": null,
+    "dialect": "postgres",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q3",
+    "query": "Show customers who redeemed more reward points than the average across all branches",
+    "expected_sql": null,
+    "expected_result": null,
+    "dialect": "postgres",
+    "difficulty": "hard"
+  }
+]
